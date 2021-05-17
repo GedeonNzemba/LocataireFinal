@@ -1,0 +1,59 @@
+alphabet = "abcdefghijklmnopqrstuvwxyz"   
+test_dups = ["zzz","dog","bookkeeper","subdermatoglyphic","subdermatoglyphics"] 
+test_miss = ["zzz","subdermatoglyphic","the quick brown fox jumps over the lazy dog"] 
+
+
+# From Section 11.2 of: 
+# Downey, A. (2015). Think Python: How to think like a computer scientist. Needham, Massachusetts: Green Tree Press. 
+
+
+def histogram(s):
+   d = dict()
+   for c in s:
+     if c not in d:
+        d[c] = 1
+     else:
+        d[c] += 1
+   return d
+
+# Write a function called has_duplicates that takes a string parameter and returns True if string has any repeated characters.
+ # Otherwise, it should return false.
+ 
+def has_duplicates(number1):
+  set1 = histogram(number1)
+
+
+  for key in set1:
+    if set1[key] > 1:
+      return True
+  return False
+
+# Write a loop over the strings in the provided test_dups list.
+
+for i in test_dups:
+  if has_duplicates(i):
+    print(i, 'has duplicates')
+  else:
+    print(i, 'has no duplicates')
+
+# Write a function called missing_letters that takes a string parameter and returns a new string.
+# With all the letters of the alphabet that are not in the argument string
+
+def missing_letters(number2):
+  added_list = []
+  set1 = histogram(number2)
+
+
+  for letter in alphabet:
+    if letter not in set1:
+      added_list.append(letter)
+  
+  return ''.join(added_list)
+# Write a loop over the strings in list test_miss and call missing_letters with each string
+
+for i in test_miss:
+  output = missing_letters(i)
+  if output == '':
+    print(i, 'uses all the letters ')
+  else:
+    print(i, 'is missing letters', output)

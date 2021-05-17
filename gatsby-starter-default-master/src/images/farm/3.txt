@@ -1,0 +1,54 @@
+alphabet = "abcdefghijklmnopqrstuvwxyz"   
+
+test_dups = ["zzz","dog","bookkeeper","subdermatoglyphic","subdermatoglyphics"] 
+
+
+test_miss = ["zzz","subdermatoglyphic","the quick brown fox jumps over the lazy dog"] 
+
+# From Section 11.2 of: 
+
+# Downey, A. (2015). Think Python: How to think like a computer scientist. Needham, Massachusetts: Green Tree Press. 
+
+def histogram(s):
+     d = dict()
+     for c in s:
+          if c not in d:
+               d[c] = 1
+          else:
+               d[c] += 1
+     return d
+
+
+def has_duplicates(s):
+    p=histogram(s)
+    for index in s:
+        if p.get(index,0)!=1:
+            return True
+    return False
+
+print ('checking if test_dups has any duplicated letters:')  
+for string in test_dups:
+    if has_duplicates(string) is True:
+        print (string+ ' has duplicates')
+    else:
+        print (string+ " has no duplicates")
+        
+def missing_letters(s):
+    p=histogram(s)
+    global alphabet
+    lost=list(alphabet)
+    for letter in p:
+        if letter in lost:
+            lost.remove(letter)
+    delimiter=''
+    lost_string= delimiter.join(lost)
+    return(lost_string)
+
+
+print ('checking if test_miss has any missing_letters:')  
+for string in test_miss:
+    if missing_letters(string)is '' :
+        print (string, " uses all the letters")
+    else:
+        print (string, ' is missing letters', missing_letters(string))
+   

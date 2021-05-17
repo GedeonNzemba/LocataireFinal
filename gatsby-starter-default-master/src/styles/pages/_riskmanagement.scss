@@ -1,0 +1,648 @@
+// slide
+nav.risk-management__navbar {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+
+  & div.risk-management_logoWrap {
+    display: block;
+    float: left;
+  }
+
+  & #risk-management__divider {
+    margin: 0 3rem;
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: row;
+
+    & li {
+      display: block;
+      list-style-type: none;
+      float: left;
+      margin-right: 2.5rem;
+      line-height: 1.2;
+      color: $white;
+      text-transform: uppercase;
+      font-family: "Ginto bold";
+      font-weight: bold;
+      font-size: $xxsmall-body-copy;
+    }
+  }
+}
+div > div.flikislide > div.test > div.flickity-viewport > {
+  height: 100vh !important;
+}
+// slide ends
+#risk-bg-2 {
+  // background-image: url("../images/AUDIT\ &\ RISK\ MANAGEMENT/slide-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  // border-left: 10px solid #314862;
+  // border-radius: 0% 0% 0% 30%;
+}
+
+#risk-bg {
+  // background-image: url("../images/AUDIT\ &\ RISK\ MANAGEMENT/slide-1.jpg");
+  background-repeat: round;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 80vh;
+  // border-left: 10px solid #314862;
+  background-position-x: 26rem;
+  // border-radius: 0% 0% 0% 30%;
+}
+#locataire__risk-management {
+  height: 300vh;
+}
+// parallax
+// .background-bg {
+//   background-image: url("../images/AUDIT\ &\ RISK\ MANAGEMENT/bg-pl.jpg");
+//   width: 1080px;
+//   height: 1280px;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   position: absolute;
+// }
+
+.Parallax {
+  display: flex;
+  justify-content: center;
+
+  &__background,
+  &__background-triangles {
+    width: 100%;
+    height: 2400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+  }
+
+  &__background {
+    background-image: url("../images/AUDIT\ &\ RISK\ MANAGEMENT/background.png");
+  }
+
+  &__background-triangles {
+    background-image: url("../images/AUDIT\ &\ RISK\ MANAGEMENT/background-triangles.png");
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+  }
+}
+
+// parallax ends
+div.wraper-header_content-risk {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  float: left;
+  height: auto;
+
+  & .risk-management__leftWrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 6%;
+    height: 800px;
+    width: 50%;
+
+    & .risk-management__header-content {
+      display: flex;
+      flex-direction: column;
+      padding-left: 6rem;
+      height: 30rem;
+
+      & .rs-subtitle {
+        display: block;
+        width: fit-content;
+
+        & h3 {
+          line-height: 1.2;
+          text-rendering: optimizeLegibility;
+          text-transform: uppercase;
+          font-family: "Ginto bold";
+          font-weight: bold;
+          color: $rs-subtitle;
+          font-size: 3.5rem;
+          margin-block-end: 0;
+          z-index: 999;
+        }
+
+        & #risk-management__Textline {
+          background-color: $rs-line;
+          height: 0.5rem;
+
+          border: none;
+          margin-block-start: 0;
+          margin-inline-start: 0;
+          transform: translateY(-10px);
+          z-index: 9;
+        }
+      }
+
+      & h1 {
+        text-align: left;
+        font-family: "GT Super Ds Trial Bd";
+        font-size: 4.7rem;
+        font-weight: bold;
+        text-rendering: optimizeLegibility;
+        text-transform: uppercase;
+        color: $white;
+      }
+
+      & .risk-management__HeaderButton {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: fit-content;
+
+        & #rs-line {
+          margin: 0 3rem;
+        }
+      }
+    }
+
+    & .risk-management__header-rs_img {
+      // margin-left: 10%;
+      width: 120%;
+      padding: 8% 10% 0 10%;
+      padding-top: 1rem !important;
+      border-radius: 25% 25% 0% 0%;
+      border: 10px solid #314862;
+      border-bottom: none;
+      border-left: none;
+      border-right: none;
+      position: absolute;
+      bottom: -6rem;
+      background-color: $white;
+      height: 46rem;
+
+      & .risk-management__header-rs_image {
+        background-image: url("../images/farm/RISK-MANAG.png");
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: 50% 55%;
+        border-radius: 20%;
+        background-position-y: 0rem;
+      }
+    }
+  }
+}
+
+div.header_content-inner-rightTop {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  z-index: 9;
+  position: relative;
+  height: 90vh;
+
+  & section#risk-management__RightTopcontainer {
+    // height: 72vh;
+    position: relative;
+    width: 100%;
+
+    & .risk-management__header-brief {
+      width: max-content;
+      display: flex;
+      flex-direction: column;
+      padding: 2% 8% 5% 12%;
+      -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+      clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+      /* transform: translateY(0px); */
+      background: $white;
+      height: fit-content;
+      position: absolute;
+      bottom: 15rem;
+      right: 0;
+      border-top: 10px solid #314862;
+      border-left: 10px solid #314862;
+
+      & h2 {
+        color: $dark;
+        font-size: $sub-heading-copy;
+        font-family: "GT Super Ds Trial Bd";
+        font-weight: bold;
+        text-align: left;
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-block-end: 0;
+      }
+
+      & p {
+        color: $dark;
+        font-size: $body-copy;
+        font-family: "Ginto regular";
+        font-weight: normal;
+        text-align: left;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  & div.risk-management__rightContent {
+    display: flex;
+    flex-direction: row;
+    /* height: 330px; */
+    z-index: 999;
+    position: absolute;
+    bottom: 0 !important;
+    left: -15%;
+    clip-path: polygon(10% 0%, 200% 0%, 100% 100%, 0% 100%);
+    border-left: 10px solid #314862;
+
+    & .risk-management__right_image {
+      background-image: url("../images/farm/risk_banner.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 73rem;
+      height: 16rem;
+    }
+  }
+}
+
+.risk-management__HeaderButton {
+  margin-top: 2.5rem;
+}
+
+// slide
+.carousel {
+  background: #eee;
+}
+
+.carousel-cell {
+  // margin-right: 20px;
+  overflow: hidden;
+}
+
+.carousel-cell img {
+  display: block;
+  // height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-cell img {
+    // height: 400px;
+  }
+}
+// slide ends
+
+// service
+.rs__appointement {
+  height: auto;
+}
+.rs__appointement div.rs__appointement-wrap section {
+  width: auto;
+  height: unset;
+}
+.rs__appointement div.rs__appointement-wrap section div.rs__appointement-bg {
+  width: 100%;
+  height: 60vh;
+}
+.rs__appointement-content_Toptext {
+  position: absolute;
+  top: 1rem;
+
+  & h3 {
+    text-transform: uppercase;
+    font-size: 3.4rem;
+  }
+}
+.rs__appointement div.rs__appointement-wrap section div.rs__appointement-content .rs__appointement-content_bottom {
+  width: 60rem !important;
+  margin-top: 2rem;
+  & h1 {
+    font-size: 4.4rem !important;
+  }
+  & p {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+}
+.rs__appointement div.rs__appointement-wrap section div.rs__appointement-bg {
+  background-size: contain !important;
+}
+.rs__appointement-wrap {
+  width: 90% !important;
+}
+.rs__appointement-content {
+  padding-right: 5rem;
+  float: right;
+  right: 0 !important;
+  justify-content: space-evenly !important;
+  height: 100%;
+}
+.risk-management__services div.risk-management__services-header h1 {
+  font-size: 5rem;
+}
+.risk-management__services-header h1 {
+  font-size: 5rem;
+}
+.risk-management__services-container {
+  padding: unset;
+  display: unset !important;
+  justify-content: space-between;
+
+  & .rs__item {
+    width: 30rem;
+    margin-bottom: 5rem !important;
+
+    & .rs__item-header {
+      width: 30rem;
+      height: 18rem;
+      background-size: cover !important;
+    }
+
+    & .rs__item-header_subTitle {
+      bottom: 25rem;
+
+      & span#subTitle {
+        font-size: 2.6rem;
+      }
+    }
+
+    & .rs__item-content {
+      padding-bottom: 8%;
+    }
+  }
+}
+
+.rs__item {
+  width: 30rem;
+  height: 43.6rem;
+  border-radius: 4rem 4rem 4rem 4rem !important;
+
+  & .rs__item-header {
+    width: 30rem;
+    height: 18rem;
+    background-size: contain;
+  }
+
+  & .rs__item-header_subTitle {
+    bottom: 25rem;
+
+    & span#subTitle {
+      font-size: 2.6rem;
+    }
+  }
+
+  & .rs__item-content {
+    padding-bottom: 8%;
+  }
+}
+
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.rs__item-header.rs__item1,
+.rs__item-header.rs__item2,
+.rs__item-header.rs__item3,
+.rs__item-header.rs__item4 {
+  border-radius: 4rem 4rem 0 0 !important;
+  border-bottom: 2rem solid #314862 !important;
+}
+#service-slide-text {
+  position: absolute;
+  /* margin: 0 auto; */
+  bottom: 0;
+  align-self: center;
+  width: 80%;
+  left: 10%;
+  right: 10%;
+}
+#service-slide-text blockquote h4 {
+  & span {
+    margin-left: unset !important;
+  }
+}
+#service-slide-text blockquote h4 span {
+  margin-left: unset !important;
+}
+#service-slide-text blockquote {
+  padding: 1.2em 30px 1.2em 75px;
+  border-left: 8px solid #4d6de6;
+  line-height: 1.6;
+  position: relative;
+  background: #314862;
+  transition: 4s ease;
+}
+#service-slide-text blockquote::before {
+  content: "\201C";
+  color: #4d6de6;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+#service-slide-text blockquote::after {
+  content: "";
+}
+// service ends
+
+// appointment
+.risk-management__services {
+  height: 105vh !important;
+  clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+  border-bottom-left-radius: 15% 30%;
+  border-bottom-right-radius: 30% 15%;
+  margin-top: 25rem;
+  width: 100vw !important;
+  position: relative;
+  background-image: url("https://media.gettyimages.com/vectors/retro-grunge-of-waving-colorful-background-vector-id1157707981?s=2048x2048") !important;
+  margin-bottom: 35rem;
+}
+.risk-management__services-header {
+  padding-top: 5rem;
+}
+section#service-slide-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  // border: 2px dashed red;
+  width: 80%;
+  margin: 0 auto;
+  background: transparent;
+  padding: 1rem;
+  /* align-items: center; */
+
+  & h4 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 400;
+    font-kerning: normal;
+    filter: drop-shadow(2px 4px 6px black);
+  }
+}
+.item-sub-wrap {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  margin: 1rem 0 2rem 0;
+  & .sub-item {
+    width: fit-content;
+    line-height: 1.2;
+
+    & p {
+      margin-block: 0;
+      @media (min-width: 374px) and (max-width: 1920px) {
+        font-size: calc(20px + (400vw - 1500px) / 1545);
+        font-weight: 400;
+        font-family: "Ginto regular";
+        text-transform: capitalize;
+        word-wrap: break-word;
+      }
+    }
+  }
+
+  & #sub_divider {
+    display: block;
+    margin: 0 1.4rem;
+    height: 5rem;
+    border-left: 0.3rem inset #314862;
+  }
+}
+// appoitment end
+// .Parallax__background {
+//   top: 15rem;
+//   background-position-y: center;
+//   background-image: url(https://www.nicepng.com/png/detail/9-99120_free-abstract-png-backgrounds-abstract-background-abstract-png.png) !important;
+// }
+
+// content
+.risk-content {
+  display: flex;
+  flex-direction: row;
+
+  & .__innerItem-container-img {
+    display: block;
+    height: 100%;
+    width: 55%;
+    // border: 1px solid greenyellow;
+
+    & .main-carousel {
+      & .carousel-cell {
+        // min-width: 415px;
+        height: 60.8rem;
+      }
+    }
+  }
+
+  & .__innerItem-container-text {
+    width: 45%;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    // border: 1px solid red;
+
+    justify-content: center;
+
+    &::after {
+      padding: 0;
+      margin: 0;
+      display: block; /* probably not really needed? */
+      content: "";
+      width: 50%;
+      height: 50%; /* slight higher to work around rounding errors(?) on some zoom levels in some browsers. */
+      background-color: transparent;
+      position: absolute;
+      border-right: 5px solid #313962;
+      border-bottom: 5px solid #313962;
+      right: 0;
+      transform: rotateY(45deg);
+      bottom: 0;
+    }
+
+    & ._inner-text-content {
+      display: flex;
+      flex-direction: column;
+      padding: 0 10% 8%;
+
+      & ._item_text-header {
+        display: block;
+
+        & h1 {
+          font-size: 4rem;
+          font-family: "Ginto bold";
+          color: #000;
+          text-transform: capitalize;
+        }
+      }
+
+      & ._item_text {
+        display: block;
+
+        & p {
+          font-size: 1.9rem;
+          font-family: "Ginto regular";
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+
+  & .item__btn {
+    margin-top: 2rem;
+
+    & button.btn.btn-success {
+      margin-left: 4rem;
+    }
+  }
+}
+// content responsiveness
+// @media (min-width: 900px) and (max-width: 1199px) {
+//   .img-resp {
+//     width: calc(450px + (14950vw - 134550px) / 299);
+//   }
+// }
+
+@media (min-width: 374px) and (max-width: 1920px) {
+  .risk-content .__innerItem-container-text ._inner-text-content ._item_text-header h1 {
+    font-size: calc(38px + (1600vw - 6000px) / 1545) !important;
+  }
+}
+
+//carousel
+// .is-selected {
+//   max-width: 56rem;
+//   // border: 1px solid green;
+// }
+// .carousel-cell img {
+//   max-width: 56.3rem;
+//   height: 60.8rem;
+// }
+
+.carousel-cell:not(.is-selected) {
+  border-radius: 0% 25% 25% 0%;
+  opacity: 0.4;
+}
+// .carousel-cell {
+//   height: 60.8rem;
+// }

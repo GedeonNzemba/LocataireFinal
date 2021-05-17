@@ -1,0 +1,1308 @@
+.spacesContainer {
+    width: 100vw;
+    height: 100vh;
+}
+
+.headingSpaces {
+    width: 700px;
+    text-align: left;
+    letter-spacing: 0;
+    color: $blue;
+    opacity: 1;
+    font-family: "Brown-Regular";
+    font-weight: 200;
+    font-size: 55px;
+    margin-bottom: 1.45rem;
+}
+
+.spacesBodyCopy {
+    line-height: 1.4em;
+    font-size: 16px;
+
+    color: $blue;
+    width: 640px;
+    height: 114px;
+    text-align: left;
+    letter-spacing: 0;
+    margin-bottom: 1.45rem;
+
+    @media (min-width: 993px) {
+        & {
+            width: 100% !important;
+            margin: 0 auto 1.45rem auto !important;
+        }
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+    p.spacesUnitBodyCopy {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1799px) {
+    p.spacesUnitBodyCopy {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+}
+@media (min-width: 1800px) and (max-width: none) {
+    p.spacesUnitBodyCopy {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+}
+
+.studentAccomText {
+    @include justifySBAndAlignCenter;
+    position: absolute;
+    bottom: 1%;
+    right: 100px;
+    font-size: 14px;
+
+    color: $blue;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: 1.2;
+    display: flex;
+}
+
+.spacesHero {
+    @include flexRow;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: 10;
+    margin-left: auto;
+    overflow: hidden;
+    justify-content: flex-end;
+    // margin-bottom: 50px;
+}
+.spaceDesktopHero {
+    width: 54.848vw !important;
+    height: unset !important;
+
+    @include for-ipad-pro-breakpoint {
+        & img {
+            object-fit: fill !important;
+        }
+        & {
+            width: 100vw !important;
+        }
+    }
+}
+@media (width: 1024px) {
+    .spaceDesktopHero {
+        width: 100vw !important;
+    }
+}
+.imageContentSpaces {
+    @include flexRow;
+    position: relative;
+    align-items: center;
+    padding: 0;
+}
+@media (min-width: 1401px) and (max-width: 1535px) {
+    .imageContentSpaces {
+        &:not(:first-child) {
+            margin-top: 15rem;
+        }
+        &:first-child {
+            margin-top: 8rem;
+        }
+    }
+}
+.spacesColumnName {
+    align-self: flex-start;
+    margin-left: 1%;
+}
+.spacesTextColumn {
+    @include flexColumn;
+    position: absolute;
+    z-index: 20;
+    width: 45.156%;
+    min-width: 550px;
+    max-width: 867px;
+    height: 100vh;
+    background-color: chocolate;
+    color: $blue;
+    justify-content: center;
+    align-items: left;
+    padding: 10% 5% 10% 5%;
+}
+@include for-ipad-pro-breakpoint {
+    .spacesTextColumn {
+        background-color: #e5e8e8;
+        // clip-path: circle(35% at 33% 50%);
+    }
+}
+.button {
+    top: 610px;
+    left: 101px;
+    width: 219px;
+    height: 55px;
+}
+.spacesSocialsDiv {
+    @include flexRow;
+    @include justifySBAndAlignCenter;
+    position: absolute;
+    bottom: 5%;
+    font-size: 14px;
+    min-width: 120px;
+}
+.spacesHeroSmall {
+    display: none;
+}
+div.spacesHeroTablet .spacesHeroTabletWrapper {
+    width: 100vw;
+    height: 100vh;
+
+    & img {
+        object-fit: unset !important;
+    }
+}
+@media (min-width: 993px) {
+    .spacesHeroTablet {
+        display: none;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 992px) {
+    .spacesHeroSmall {
+        display: none !important;
+    }
+}
+@media (max-width: 499px) {
+    .spacesHeroTablet {
+        display: none !important;
+    }
+}
+
+// .spacesHeroGradient {
+//     position: absolute;
+//     top: 0%;
+//     height: 100%;
+//     width: 100vw;
+//     z-index: 15;
+//     background-image: linear-gradient(
+//       rgba(229, 232, 232, 0.95),
+//       rgba(229, 232, 232, 0)
+//     );
+//   }
+.spaceInfo {
+    display: flex;
+    margin-bottom: 23px;
+    width: max-content;
+    max-width: 100%;
+
+    @include for-phone-only {
+        flex-direction: column;
+    }
+}
+@include for-tablet-landscape-up {
+    div.spaceInfo {
+        max-width: none;
+    }
+}
+@media (min-width: 970px) {
+    div.spaceInfo {
+        max-width: 100%;
+    }
+}
+.leftLivingArea {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    font-family: "Brown-Regular";
+    letter-spacing: -0.72px;
+    @include for-phone-only {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+}
+@include for-tablet-landscape-up {
+    p.rightNumberBathroom.fourBedRoom {
+        width: auto;
+    }
+    p.rightNumberBathroom {
+        width: min-content;
+        @media (max-width: 970px) {
+            &:not(:last-child) {
+                width: unset;
+            }
+            &.fourBedRoom {
+                width: auto;
+            }
+        }
+        @media (min-width: 993px) {
+            &:not(.twoBedRoom) {
+                width: auto;
+            }
+        }
+    }
+    @media (min-width: 993px) {
+        p.twoBedRoom {
+            width: 50%;
+            @media (min-width: 1199px) {
+                width: auto;
+            }
+        }
+    }
+    // .leftLivingArea {
+    //   width: 50%;
+    //   @media (min-width: 971px) {
+    //     & {
+    //       width: unset;
+    //     }
+
+    //   }
+    // }
+    // .twoBedRoom {
+    //   width: 30%;
+    // }
+}
+@media (min-width: 971px) {
+    // .twoBedRoom {
+    //   width: unset;
+    // }
+}
+
+.spacesSectionInfoHeading {
+    font-size: 32px;
+}
+
+// TEXT RESPONSIVE
+
+@media (min-width: 374px) and (max-width: 1920px) {
+    .sectionInfoHeading {
+        font-size: calc(38px + (54 - 38) * (100vw - 375px) / (1920 - 375)) !important;
+    }
+    .spaceInfo {
+        & .leftLivingArea,
+        .rightNumberBathroom {
+            font-size: calc(20px + (24 - 20) * (100vw - 375px) / (1920 - 375));
+        }
+    }
+    h1.headingSpaces {
+        font-size: calc(54px + (62 - 54) * (100vw - 374px) / (1920 - 374));
+    }
+}
+@media (min-width: 993px) {
+    .inlineLocation {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .inlineLocation {
+        flex-direction: row;
+        display: flex;
+    }
+    h1.headingSpaces {
+        width: 338px;
+    }
+    div.spacesTextColumn {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 993px) {
+    .headingSpaces {
+        margin: 0 auto 1.45rem auto !important;
+        width: 100% !important;
+    }
+}
+// TEXT RESPONSIVE ENDS HERE
+.divider {
+    border-left: 1px solid $blue;
+    margin: 0px 28px 0px;
+}
+.rightNumberBathroom {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    font-family: "Brown-Regular";
+    letter-spacing: -0.72px;
+    @include for-phone-only {
+        font-size: 20px;
+    }
+}
+.spacesSectionsContainer {
+    @include flexColumn;
+    padding-top: 80px;
+    @include for-ipad-breakpoint {
+        padding-top: 10rem;
+    }
+}
+.equipSection {
+    width: 100%;
+    padding: 0 10% 10% 10%;
+    margin-bottom: 4rem;
+}
+.equipSectionHeader {
+    width: 100%;
+    color: $blue;
+    margin-bottom: 50px;
+    @include for-phone-only {
+        margin-bottom: 80px;
+    }
+}
+.equipSectionHeading {
+    font-weight: 200;
+    font-size: 42px;
+    letter-spacing: -1.26px;
+    font-family: "Brown-Regular";
+    margin-bottom: 15px;
+    @include for-phone-only {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.equipSectionBody {
+    font-weight: unset;
+    font-size: 16px;
+
+    line-height: 1.2;
+
+    @include for-phone-only {
+        font-size: 18px;
+        width: 80%;
+        line-height: 1.5;
+    }
+    @media (max-width: 375px) {
+        width: 90%;
+        min-height: 81px;
+    }
+}
+
+@media (max-width: 1199px) {
+    div.equipmentColumns__margin {
+        & ul.noWidth {
+            width: fit-content;
+            min-width: unset !important;
+            margin-left: 0;
+            // &:not(.secChild) {
+            //   margin-left: 1rem !important;
+            // }
+        }
+    }
+}
+@media (min-width: 600px) and (max-width: 992px) {
+    ul {
+        &.equipmentColumn {
+            width: 100% !important;
+            margin-left: 0 !important;
+        }
+    }
+}
+.equipmentColumns,
+.equipmentColumnsB {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between !important;
+
+    & ul h2 {
+        font-family: "Brown-Regular";
+    }
+}
+.equipmentColumns__margin {
+    display: inline-flex;
+    & ul:not(:first-child) {
+        margin-left: 5%;
+        // border: 1px solid orangered;
+    }
+    & ul:nth-child(2) {
+        margin-left: 1.45rem;
+        @include equip {
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: $break) {
+    div.equipmentColumns__margin {
+        & ul:nth-child(2) {
+            margin-left: 1rem;
+            @include for-phone-only {
+                & {
+                    margin-left: unset;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 559px) {
+    .equipmentColumns__margin {
+        margin-block-start: 3rem !important;
+    }
+}
+@media (max-width: 407px) {
+    .equipmentColumns__margin {
+        margin-top: 2rem;
+    }
+}
+@media (max-width: 334px) {
+    .equipmentColumns__margin {
+        // margin-top: 5rem;
+        margin-top: calc(260px + (80 - 260) * (100vw - 200px) / (334 - 200)) !important;
+    }
+}
+@media (max-width: 599px) {
+    .equipmentColumns__margin {
+        margin: 0 auto;
+        margin-top: 2.5rem;
+
+        & ul {
+            min-width: unset;
+            // margin-left: unset !important;
+            margin-right: unset !important;
+        }
+    }
+}
+@media (max-width: 268px) {
+    .equipmentColumns__margin {
+        margin-top: 3.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .equipmentColumns__margin ul:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+}
+@media (max-width: 992px) {
+    .equipmentColumns__margin {
+        margin: 0 auto;
+        & ul {
+            min-width: unset;
+            // margin-left: unset !important;
+            // margin-right: unset !important;
+        }
+
+        & ul h2 {
+            font-family: "Brown-Regular";
+        }
+
+        .leftArrow:hover {
+            path {
+                fill: red;
+            }
+        }
+
+        .rightArrow {
+            fill: $blue;
+            z-index: 300;
+            cursor: pointer;
+        }
+
+        .rightArrow:hover {
+            path {
+                fill: red;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .headingSpaces {
+        margin: 0 auto 1.45rem auto !important;
+        width: fit-content !important;
+        height: fit-content !important;
+        font-size: 14vw;
+    }
+    .xxm_btn {
+        & .secondaryCta {
+            font-size: 0.85rem !important;
+            padding: 0.5rem 1rem !important;
+        }
+    }
+}
+@media (max-width: 499px) {
+    h1.headingSpaces {
+        width: 338px;
+        height: 260px;
+    }
+}
+// 2 to 1
+
+// @media (min-width: 651px) {
+//   .equipmentColumnsB {
+//     display: none;
+//   }
+// }
+// @media (max-width: 650px) {
+//   .equipmentColumns {
+//     display: none!important;
+//   }
+//   .equipmentColumnsB {
+//     display: block;
+//   }
+// }
+
+@media (max-width: 1199px) {
+    .smallScreen {
+        display: none !important;
+    }
+}
+.equipmentColumn {
+    @include flexColumn;
+    margin-right: 16%;
+    width: 100%;
+    min-width: 210px;
+    list-style-type: none;
+}
+
+.equipTitles {
+    font-size: 14px;
+
+    color: $blue;
+    text-align: left;
+    letter-spacing: 0em;
+    margin-bottom: 17px;
+    line-height: 1.2;
+}
+
+@mixin arrows {
+    .leftArrow {
+        transform: rotate(180deg);
+        fill: $blue;
+        z-index: 300;
+        cursor: pointer;
+    }
+    .rightArrow {
+        fill: $blue;
+        z-index: 300;
+        cursor: pointer;
+    }
+}
+
+.arrowsPictureLeft {
+    @include justifySBAndAlignCenter;
+    @include arrows();
+    position: absolute;
+    background-color: darkred;
+    height: 77px;
+    width: 155px;
+    display: flex;
+    padding: 15px;
+    z-index: 300;
+    text-align: center;
+}
+
+.arrowsPictureRight {
+    @include justifySBAndAlignCenter;
+    @include arrows();
+    position: absolute;
+    background-color: darkred;
+    height: 77px;
+    width: 155px;
+    display: flex;
+    padding: 15px;
+    z-index: 300;
+    text-align: center;
+}
+
+.orangeBird {
+    position: absolute;
+    right: 9%;
+    svg {
+        fill: orange;
+    }
+}
+
+.footerLine {
+    width: 100%;
+    border-bottom: 1px solid $blue;
+    margin-bottom: 2rem;
+}
+
+.spacesLeftSectionImageContainer {
+    @include justifyAndAlignCenter;
+    width: 100%;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    margin-right: 2em;
+    display: flex;
+}
+.spacesRightSectionImageContainer {
+    @include justifyAndAlignCenter;
+    width: 100%;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    margin-right: 2em;
+    display: flex;
+}
+
+.desktopImages {
+    scroll-behavior: smooth;
+    width: 50%;
+    white-space: nowrap;
+    display: flex;
+    // -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 374px) and (max-width: $break) {
+    .headingSpaces {
+        font-size: 45px;
+        font-weight: 400;
+    }
+}
+// TABLET
+@include for-tablet-portrait-up {
+    .basicSectionLeftContainer {
+        // height: unset !important;
+        flex-direction: column;
+
+        @include for-tablet-landscape-up {
+            flex-direction: row;
+        }
+    }
+}
+
+@include for-tablet-portrait-down {
+    .basicSectionLeftContainer {
+        height: unset !important;
+        flex-direction: column;
+    }
+    .basicSectionRightContainer {
+        flex-direction: column-reverse;
+    }
+}
+@include for-small-tablet-portrait-only {
+    .spacesStudioRender {
+        margin: 0 auto 3rem auto;
+        width: 90%;
+        height: 400px;
+    }
+}
+
+// TABLET LANDSCAPE
+@include for-tablet-landscape-up {
+} //900
+@include for-tablet-landscape-only {
+} //900 - 1199
+
+@media only screen and (max-width: $break) {
+    // .desktopImages{
+    //   display: none ;
+    // }
+
+    .spacesBodyCopy {
+        margin-bottom: 10px;
+        display: none;
+    }
+
+    .spacesContainer {
+        @include flexColumn;
+        min-height: 100vh;
+    }
+    .spacesHero {
+        display: none;
+    }
+    .spacesHeroSmall,
+    .spacesHeroTablet {
+        @include flexColumn;
+        width: 100vw;
+        height: 100vh;
+        z-index: 14;
+    }
+
+    .spacesUnitBodyCopy {
+        font-size: 18px;
+        line-height: 1.2;
+        margin: 0;
+        width: "60%";
+        @include for-phone-only {
+            width: 100%;
+            text-align: left;
+            text-rendering: optimizeLegibility;
+        }
+    }
+
+    .spacesMobileColumnStack {
+        @include for-phone-only {
+            @include flexColumn;
+            height: unset !important;
+        }
+
+        @include for-ipad-breakpoint {
+            &.basicSectionLeftContainer {
+                height: fit-content;
+            }
+        }
+    }
+
+    @include for-ipad-breakpoint {
+        .spacesMobileReverseColumnStack {
+            height: fit-content;
+        }
+    }
+
+    .spacesMobileReverseColumnStack {
+        @include for-phone-only {
+            @include flexColumnReverse;
+            height: unset !important;
+        }
+    }
+
+    .spacesTextColumn {
+        display: unset;
+        height: unset;
+        width: 100%;
+        padding: 6%;
+        padding-bottom: 15px;
+        padding-top: 120px;
+        min-width: unset;
+        width: 100%;
+        @include for-ipad-breakpoint {
+            padding-top: 40%;
+        }
+    }
+    .spacesSocialsDiv {
+        display: none;
+    }
+    .spcaesTextColumnImage {
+        display: none;
+    }
+    // .divider {
+    //   display: block;
+    //   margin: 0 0.5rem;
+    // }
+    .sectionInfoHeading {
+        text-align: left;
+    }
+
+    .equipmentColumns {
+        flex-direction: column;
+    }
+    .equipmentColumn {
+        margin: 0;
+        list-style-type: none;
+    }
+    .equipSectionHeading {
+        font-size: 38px;
+        letter-spacing: -1.14px;
+        font-weight: 200;
+    }
+    .equipSectionHeader {
+        height: 110px;
+        padding: 0;
+        width: 110%;
+        margin-top: 4rem;
+    }
+
+    .imageContentSpaces {
+        padding-bottom: 0 !important;
+
+        &:not(:first-child) {
+            margin-top: 8rem;
+        }
+    }
+
+    .equipSection {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .bottomButton {
+        margin-top: 2rem;
+    }
+    .orangeBird {
+        svg {
+            width: 119.44px;
+            height: 71.53px;
+        }
+    }
+
+    .horizontalScrollContainer {
+        scroll-behavior: smooth;
+        width: 100vw;
+        display: flex;
+        -webkit-overflow-scrolling: touch;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        margin-bottom: 2em;
+    }
+
+    .spacesLeftSectionImageContainer {
+        width: 293px;
+        // padding: 8%;
+        scroll-snap-align: start;
+        padding-right: 20px;
+        height: 284px;
+        // overflow-y: hidden;
+    }
+
+    .spacesRightSectionImageContainer {
+        width: 293px;
+        // padding: 8%;
+        scroll-snap-align: end;
+        padding-left: 20px;
+        height: 284px;
+        // overflow-y: hidden;
+    }
+
+    .footerLine {
+        width: 110%;
+    }
+}
+
+.bottomButton {
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: $break) {
+    .footerLine {
+        width: 110%;
+        border-bottom: solid $blue 1px;
+    }
+
+    .spacesSectionImageColumn {
+        display: none;
+    }
+
+    .spacesSectionTextHeading {
+        @include brownFourHundred;
+    }
+
+    .spacesTextColumn {
+        min-width: unset;
+        width: 100%;
+        background-color: unset;
+        background: linear-gradient(rgba(229, 232, 232, 0.95), rgba(229, 232, 232, 0));
+    }
+}
+@media only screen and (max-width: $smallBreak) {
+    .desktopImages {
+        display: none;
+    }
+    .headingSpaces {
+        width: 68%;
+    }
+    .spacesBodyCopy {
+        display: none;
+    }
+
+    .imageContentSpaces {
+        padding: 2em 0 0;
+
+        &:not(:first-child) {
+            margin-top: 6rem;
+        }
+    }
+
+    .spacesSectionImageColumn {
+        display: none;
+    }
+
+    .spacesSectionTextColumn {
+        display: none;
+    }
+
+    .spacesSectionTextHeading {
+        @include brownFourHundred;
+    }
+
+    .spcaesTextColumn {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .spacesHeroSmall,
+    .spacesHeroTablet {
+        overflow: hidden;
+    }
+
+    .properSpacesHomeContainer {
+        height: unset;
+        // height: 90vh;
+        padding-top: 15%;
+    }
+
+    .spacesSectionTextHeading {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .horizontalScrollContainer {
+        display: none;
+    }
+    .arrowsPictureLeft {
+        top: 72%;
+        left: 42%;
+    }
+    .arrowsPictureRight {
+        top: 72%;
+        right: 42%;
+    }
+}
+@media (min-width: 1921px) {
+    .horizontalScrollContainer {
+        display: none;
+    }
+    .arrowsPictureLeft {
+        top: 72%;
+        left: 38%;
+    }
+    .arrowsPictureRight {
+        top: 72%;
+        right: 38%;
+    }
+}
+@media (max-width: 1400px) and (min-width: 900px) {
+    .horizontalScrollContainer {
+        display: none;
+    }
+    .arrowsPictureLeft {
+        top: 81%;
+        left: 44%;
+    }
+    .arrowsPictureRight {
+        top: 81%;
+        right: 44%;
+    }
+    .imageContentSpaces {
+        padding: 8em 0 0;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1400px) {
+    .horizontalScrollContainer {
+        display: none;
+    }
+    .headingSpaces {
+        width: 600px;
+    }
+    .spacesBodyCopy {
+        width: 500px;
+    }
+}
+
+@media (max-width: 700px) {
+    .desktopImages {
+        display: none;
+    }
+
+    .arrowsPictureLeft {
+        display: none;
+    }
+    .arrowsPictureRight {
+        display: none;
+    }
+}
+
+// section just before the contact section
+
+// li.equipmentColumn__svg {
+
+// }
+
+// responsive
+@include for-ipad-breakpoint {
+    .sectionInfoContainer {
+        justify-content: flex-start;
+        height: fit-content;
+    }
+}
+@media (max-width: 220px) {
+    .sectionInfoContainer {
+        z-index: 99;
+        margin-block-start: -35px;
+        // margin-bottom: 0!important;
+    }
+
+    .spacesStudioPlusRender,
+    .spacesStudioRender,
+    .spacesTwoBedroomRender,
+    .spacesThreeBedroomRender,
+    .spacesFourBedroomRender {
+        // width: 100%;
+        // z-index: 99;
+        // margin-block-start: -35px;
+
+        margin-bottom: 0 !important;
+    }
+}
+@media only screen and (max-width: $break) {
+    .sectionInfoContainer {
+        width: 50%;
+
+        @include for-small-tablet-portrait-only {
+            & {
+                // border: 1px solid orange;
+                width: 90%;
+                padding: 0;
+                margin: 0 auto;
+            }
+        }
+        @include for-tablet-portrait-only {
+            & {
+                // border: 1px solid orange;
+                width: 90%;
+                padding: 0;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@include for-phone-only {
+    .sectionInfoContainer {
+        width: 100%;
+    }
+}
+
+@include for-medium-desktop-up {
+    .imageContentSpaces:not(:first-child) {
+        margin-top: 15rem;
+        //spacing each section with a 12rem of padding bottom
+    }
+    .imageContentSpaces:first-child {
+        margin-top: 10rem;
+    }
+}
+@include for-big-desktop-up {
+    .imageContentSpaces:not(:first-child) {
+        margin-top: 25rem;
+    }
+    .imageContentSpaces:first-child {
+        margin-top: 20rem;
+    }
+}
+@media (min-width: 1800px) {
+    .imageContentSpaces:not(:first-child) {
+        margin-top: 35rem;
+    }
+    .imageContentSpaces:last-child {
+        margin-bottom: 15rem;
+    }
+    .studentAccomText {
+        font-size: calc(17px + (14.5 - 17) * (100vw - 1800px) / (2559 - 1800));
+    }
+    // .imageContentSpaces:first-child {
+    //   margin-top: 20rem;
+    // }
+}
+@include for-medium-desktop-up {
+    .spacesStudioRender,
+    .spacesStudioPlusRender,
+    .spacesTwoBedroomRender,
+    .spacesThreeBedroomRender,
+    .spacesFourBedroomRender {
+        height: 556px;
+    }
+}
+
+@include for-big-desktop-up {
+    .spacesSectionsContainer {
+        max-width: 80% !important;
+        margin: 0 auto !important;
+    }
+}
+
+// LANDSCAPE MEDIA QUERY
+@media only screen and (min-device-width: 376px) {
+}
+@media only screen and (max-device-height: 375px) and (orientation: landscape) {
+    h1.headingSpaces {
+        font-size: 6.3vw;
+        width: 100%;
+        margin: 0 auto 1.45rem auto;
+    }
+    div.imageAnimationItem {
+        & div.spacesMobileColumnStack,
+        & div.basicSectionRightContainer {
+            height: 412.5px;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 500px) and (orientation: landscape) {
+    h1.headingSpaces {
+        font-size: 45px;
+        width: 100%;
+        margin: 0 auto 1.45rem auto;
+    }
+}
+
+@media only screen and (min-device-width: 601px) and (orientation: landscape) {
+    h1.headingSpaces {
+        width: 75%;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-device-height: 2559px) and (orientation: landscape) {
+    div.imageAnimationItem {
+        & div.spacesMobileColumnStack,
+        & div.basicSectionRightContainer {
+            // height: 486.39px;
+            height: 80vh;
+        }
+    }
+}
+
+@include for-tablet-portrait-down {
+    .basicSectionRightContainer {
+        height: unset !important;
+    }
+}
+
+// @media only screen and (min-device-width: 993px) and (orientation: landscape)  {
+//   div.imageAnimationItem {
+//     & div.spacesMobileColumnStack,
+//     & div.basicSectionRightContainer {
+
+//     }
+//   }
+// }
+
+@media screen and (orientation: landscape) and (max-device-width: 900px) {
+    div.spacesStudioRender,
+    div.spacesStudioPlusRender,
+    div.spacesTwoBedroomRender,
+    div.spacesThreeBedroomRender,
+    div.spacesFourBedroomRender {
+        margin-top: 0;
+        height: 100%;
+    }
+    .imageContentSpaces:not(:first-child) {
+        margin-top: 13rem;
+    }
+    .imageContentSpaces:first-child {
+        margin-top: 5rem;
+    }
+    .imageContentSpaces:last-child {
+        margin-bottom: 5rem;
+    }
+}
+
+@include for-tablet-portrait-only {
+    div.spacesStudioRender,
+    div.spacesStudioPlusRender,
+    div.spacesTwoBedroomRender,
+    div.spacesThreeBedroomRender,
+    div.spacesFourBedroomRender {
+        // border: 1px solid blue;
+        margin: 0 auto 3rem auto;
+        width: 77%;
+        height: 470px;
+    }
+}
+@include for-phone-landscape {
+    div.spacesStudioRender,
+    div.spacesStudioPlusRender,
+    div.spacesTwoBedroomRender,
+    div.spacesThreeBedroomRender,
+    div.spacesFourBedroomRender {
+        width: 77%;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-device-width: 599px) {
+    div.spacesStudioRender,
+    div.spacesStudioPlusRender,
+    div.spacesTwoBedroomRender,
+    div.spacesThreeBedroomRender,
+    div.spacesFourBedroomRender {
+        margin-top: 0;
+        height: 321px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-device-width: 499px) {
+    .xxm_btn {
+        & .secondaryCta {
+            font-size: 0.85rem;
+            padding: 0.5rem 1rem;
+        }
+    }
+    h1.headingSpaces {
+        height: fit-content;
+        margin: 0 auto 1.45rem auto;
+        font-size: 9.8vw;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-device-width: 375px) {
+    h1.headingSpaces {
+        font-size: 9.8vw;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 850px) and (orientation: landscape) {
+    .spacesFourBedroomRender,
+    .spacesStudioPlusRender,
+    .spacesStudioRender,
+    .spacesThreeBedroomRender,
+    .spacesTwoBedroomRender {
+        width: 77%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .spacesFourBedroomRender,
+    .spacesStudioPlusRender,
+    .spacesStudioRender,
+    .spacesThreeBedroomRender,
+    .spacesTwoBedroomRender {
+        margin: 0 auto 3rem;
+        width: 77%;
+        height: 470px;
+    }
+}
+@media screen and (orientation: landscape) and (max-device-width: 900px) {
+    .spacesFourBedroomRender,
+    .spacesStudioPlusRender,
+    .spacesStudioRender,
+    .spacesThreeBedroomRender,
+    .spacesTwoBedroomRender {
+        margin-top: 0;
+        height: 100%;
+    }
+}
+@media screen and (orientation: landscape) and (max-device-width: 900px) {
+    .spacesFourBedroomRender,
+    .spacesStudioPlusRender,
+    .spacesStudioRender,
+    .spacesThreeBedroomRender,
+    .spacesTwoBedroomRender {
+        margin-top: 0;
+        height: 100%;
+    }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+    .spacesStudioRender {
+        width: 50%;
+        height: 470px;
+        --image: url(../images/REALTY/house-2483336.jpg);
+        margin-top: 20%;
+    }
+}
+.spacesStudioRender {
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+    will-change: transform;
+    width: 948px;
+    height: 723px;
+    --image: url(../images/REALTY/house-2483336.jpg);
+}
+@media (min-width: 600px) and (max-width: 899px) {
+    .spacesStudioRender {
+        width: 459px;
+        height: 470px;
+        --image: url(../images/REALTY/house-2483336.jpg);
+        margin-top: 20%;
+    }
+}
+.spacesStudioRender {
+    --image: url(../images/REALTY/house-2483336.jpg);
+}
